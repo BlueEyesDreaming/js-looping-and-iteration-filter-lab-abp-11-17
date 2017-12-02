@@ -19,13 +19,17 @@ function fuzzyMatch(drivers, letters) {
 
 
 
-// function matchName(drivers, name) {
-//   let matchingDrivers = drivers.filter(function(driver){
-//     if (name === driver) {
-//       return true
-//     } else {
-//       return false
-//     }
-//     return matchingDrivers
-//   })
-// }
+function matchName(drivers, name) {
+  return drivers.filter(function(driver){
+    return driver.name.toLowerCase() === name.toLowerCase()
+  })
+
+  // let matchingDrivers = drivers.filter(function(driver){
+  //   if (name === driver) {
+  //     return true
+  //   } else {
+  //     return false
+  //   }
+  //   return matchingDrivers
+  // })
+}
