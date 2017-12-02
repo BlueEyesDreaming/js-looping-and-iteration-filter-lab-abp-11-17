@@ -10,14 +10,19 @@ function findMatching(drivers, name) {
 }
 
 function fuzzyMatch(drivers, letters) {
-  let matchingNames = drivers.filter(function(driver){
-    if (name === letters){
-      return true
-    } else {
-      return false
-    }
-    return matchingNames
+  let lengthOfLetters = letters.length;
+  return list.filter(function(name) {
+    return name.slice(0, lengthOfLetters) === letters
   })
+
+  // filter(function(driver){
+  //   if (name === letters){
+  //     return true
+  //   } else {
+  //     return false
+  //   }
+  //   return matchingNames
+  // })
 }
 
 function matchName(drivers, name) {
@@ -30,4 +35,5 @@ function matchName(drivers, name) {
     return matchingDrivers
   })
 }
+
  
