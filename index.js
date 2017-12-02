@@ -25,15 +25,16 @@ function fuzzyMatch(drivers, letters) {
   // })
 }
 
-function matchName(drivers, name) {
-  let matchingDrivers = drivers.filter(function(driver){
-    if (name === driver) {
-      return true
-    } else {
-      return false
-    }
-    return matchingDrivers
-  })
-}
 
- 
+
+
+// function matchName(drivers, name) {
+//   let matchingDrivers = drivers.filter(function(driver){
+//     if (name === driver) {
+//       return true
+//     } else {
+//       return false
+//     }
+//     return matchingDrivers
+//   })
+// }
