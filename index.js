@@ -14,15 +14,6 @@ function fuzzyMatch(drivers, letters) {
   return drivers.filter(function(name) {
     return name.slice(0, lengthOfLetters) === letters
   })
-
-  // filter(function(driver){
-  //   if (name === letters){
-  //     return true
-  //   } else {
-  //     return false
-  //   }
-  //   return matchingNames
-  // })
 }
 
 
